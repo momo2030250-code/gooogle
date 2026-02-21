@@ -1,11 +1,63 @@
- <!--IGNORE THIS LINE-->
- <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقعي الشخصي</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <img
+        class="avatar"
+        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+        alt="صورتي الشخصية"
+      />
+      <h1>مرحبًا، أنا أحمد</h1>
+      <p class="subtitle">مطور واجهات أمامية أصمم تجارب رقمية بسيطة وجميلة.</p>
+      <nav>
+        <a href="#about">من أنا</a>
+        <a href="#projects">أعمالي</a>
+        <a href="#contact">تواصل</a>
+        <a href="blog.html">المدونة</a>
+      </nav>
+    </header>
 
-<!--HTML--> 
-<img src="https://imgs.search.brave.com/3KjH4xWxL-ph_cb5Qr7oK0E2LSNO0863Zo4N-yr4Q7U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2Y3L0dvb2dsZV9G/bGlwX2NvbG9yLnBu/Zw" alt="gooogle logo" class="logo">
-<input type="text">
-<button>Google Search </button>
-<button>I'm Feeling Lucky</button>
-<br>
-<p class="momo">We protect your privacy.  <a href="blog.html" target="_blank">Privacy Policy</a> </p>
+    <main class="container">
+      <section id="about" class="card">
+        <h2>من أنا</h2>
+        <p>
+          لدي شغف ببناء مواقع سريعة وسهلة الاستخدام. أحب تحويل الأفكار إلى صفحات
+          أنيقة تعمل على جميع الأجهزة.
+        </p>
+      </section>
 
+      <section id="projects" class="card">
+        <h2>أعمالي</h2>
+        <div class="projects-grid">
+          <article>
+            <h3>متجر إلكتروني</h3>
+            <p>واجهة متجر متجاوبة مع تجربة شراء سلسة.</p>
+          </article>
+          <article>
+            <h3>لوحة تحكم</h3>
+            <p>تصميم لوحة تحكم لعرض البيانات بطريقة واضحة.</p>
+          </article>
+          <article>
+            <h3>صفحة هبوط</h3>
+            <p>صفحة تسويقية تركز على تحويل الزوار إلى عملاء.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>تواصل معي</h2>
+        <p>يمكنك مراسلتي عبر البريد: <a href="mailto:ahmed@example.com">ahmed@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 أحمد - جميع الحقوق محفوظة.</p>
+    </footer>
+  </body>
+</html>
