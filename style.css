@@ -1,48 +1,98 @@
-body, html {
-    margin: 0;
-    padding: 0; 
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
 }
 
-img {
-    width: 30%;
-    display: block;
-    margin: 100px auto 20px;
-    min-width: 272px;
+* {
+  box-sizing: border-box;
 }
 
-input {
-    box-sizing: border-box;
-    display: block;
-    border-radius: 24px;
-    border: 1px solid rgb(223, 225, 229);
-    height: 44px;
-    margin: 0 auto 29px;
-    max-width: 564px;
-    width: 90%;
-    padding-left: 30px;
-    font-size: 16px;
+body {
+  margin: 0;
+  font-family: "Tahoma", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
 }
 
-button {
-    box-sizing: border-box;
-    margin-top: 0;
-    padding: 0 16px;
-    font-size: 14px;
-    height: 36px;
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    cursor: pointer;
+.hero {
+  text-align: center;
+  padding: 56px 20px 36px;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
 }
 
-button:first-of-type {
-    margin-right: 8px;
-    margin-left: calc(50% - 131.5px);
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.2);
 }
 
-button:hover {
-    cursor: pointer;   
+h1 {
+  margin: 16px 0 8px;
 }
-.momo p a{
-   text-align: center; 
-   margin-bottom: 500px;
+
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 24px auto 40px;
+  display: grid;
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.07);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.projects-grid article {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 0 10px 24px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 42px;
+  }
 }
